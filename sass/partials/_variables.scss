@@ -1,0 +1,15 @@
+$font: "open sans", sans-serif;
+
+$colors: (
+    pink: #C32C72,
+    main-color: #F4F3EE,
+    back: #E5E5E5,
+    white: #fff,
+    text: #8d8d8d,
+);
+
+$tablet-width: 768px;
+
+@function getColor($color) {
+    @return map-get($map: $colors, $key: $color);
+}
